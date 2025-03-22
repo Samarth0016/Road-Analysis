@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            asphalt: {
+              light: '#4A4E53',
+              DEFAULT: '#2C3137',
+              dark: '#1A1D21'
+            }
+          },
+          backgroundImage: {
+            'road': "url('https://images.unsplash.com/photo-1516822264827-4c47f3af928d?auto=format&fit=crop&q=80')"
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      letter-spacing: -0.025em;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-road bg-cover bg-center bg-fixed before:content-[''] before:absolute before:inset-0 before:bg-black/90 before:z-0 relative antialiased ">
+    <h6 >about us</h6>
+    <p class="text-blue-100 z-10">This project focuses on accurately measuring the dimensions of potholes by using a calibration-based approach. The process involves capturing images or data of the pothole and then applying calibration techniques to determine its width, depth, and overall size with precision. By utilizing this method, the project aims to provide reliable and consistent measurements that can be helpful for road maintenance planning and infrastructure management.
+    </p>
+</body>
+</html>

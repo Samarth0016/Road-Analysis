@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing Result</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-base-200 min-h-screen flex items-center justify-center p-4">
+
+    <div class="card w-full max-w-xl bg-base-100 shadow-xl p-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Image Processing Result</h2>
+
+        {% if output %}
+        <div class="bg-success/10 border border-success text-success-content rounded-lg p-4 text-left whitespace-pre-wrap break-words mb-6">
+            {{ output }}
+        </div>
+        {% else %}
+        <p class="text-error">No result found.</p>
+        {% endif %}
+
+        <a href="/" class="btn btn-primary mt-4">Go to Home</a>
+    </div>
+
+</body>
+</html>
